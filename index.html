@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author">
+    <title>Sticky Footer Navbar Template for Bootstrap</title>
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+
+    <!-- Custom styles for this template -->
+    <link href="assets/style/style.css" rel="stylesheet">
+    <style>
+       
+
+        body {
+          background-image: url("https://proxy.duckduckgo.com/iu/?u=https%3A%2F%2Fcdn.pixabay.com%2Fphoto%2F2016%2F02%2F28%2F07%2F05%2Ftrain-tracks-1226546_960_720.jpg&f=1");
+           background-repeat:no-repeat;
+         background-size:cover;
+      },
+      container{
+          background-color: bisque;
+      }
+      </style>
+</head>
+
+<body>
+
+    <header>
+        <!-- Fixed navbar -->
+        <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-success">
+            <a class="navbar-brand" href="#">Train schedule</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" href="#">Disabled</a>
+            </li> 
+          </ul>
+        </div> -->
+        </nav>
+    </header>
+
+    <main role="main" class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="panel panel-default">
+
+                    <div class="panel-heading">
+                        <h3 class="panel-title">All aboard!</h3>
+                    </div>
+
+                    <div class="panel-body">
+
+                        <table class="table">
+
+                            <tr id="static-table-header">
+                                <th>Departing to</th>
+                                <th>New train every(Minutes)<th>
+                                <th>Departure time</th>
+                                <th>Minutes to Departure</th>
+                            </tr>
+
+
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="panel panel-default">
+
+                    <div class="panel-heading">
+                        <h3 class="panel-title">Add a Train</h3>
+                    </div>
+
+                    <div class="panel-body">
+
+                        <form role="form">
+
+                            <!-- <div class="form-group">
+                                <label for="text">Train Name</label>
+                                <input type="text" class="form-control" id="nameInput">
+                            </div> -->
+
+                            <div class="form-group">
+                                <label for="text">Train Destination</label>
+                                <input type="text" class="form-control" id="destinationInput">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="text">First Departure for Today (Military time)</label>
+                                <input type="text" class="form-control" id="firstArrivalInput" placeholder="HH:MM">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="text">Frequency of Departures (min)</label>
+                                <input type="number" class="form-control" id="frequencyInput">
+                            </div>
+
+                            <button type="submit" class="btn btn-default" id="addTrainButton">Submit</button>
+
+                        </form>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <span class="text-muted">Trains are the best thing ever!</span>
+        </div>
+    </footer>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
